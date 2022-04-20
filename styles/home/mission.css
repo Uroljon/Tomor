@@ -1,0 +1,26 @@
+.mission {
+    background-color: var(--theme-pink);
+    padding: 5.2rem 0 7.8rem;
+    margin-bottom: 4rem;
+}
+
+.mission__info {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 70% 1fr;
+    gap: 0 11.3rem;
+}
+
+@media (max-width: 768px) {
+    .mission {
+        background: #FFE9D5;
+        padding: 2.4rem 0 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .mission__info {
+        grid-template-columns: 100%;
+        gap: 3.2rem 0;
+    }
+}

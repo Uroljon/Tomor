@@ -1,0 +1,140 @@
+@import url("../base.css");
+@import url("../navbar.css");
+@import url("./new_arrivals.css");
+@import url("./banner.css");
+@import url("./mission.css");
+@import url("./suggestion.css");
+
+@import url("../footer.css");
+
+header .container-fluid {
+    background: var(--theme-pink);
+    overflow: hidden;
+}
+
+.moving-bar__wrapper {
+    display: grid;
+    grid-template-columns: 100% 100%;
+    width: 1440px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.moving-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    animation: marquee 15s infinite linear forwards;
+}
+
+.moving-bar__wrapper:hover .moving-bar {
+    animation-play-state: paused;
+}
+
+.moving-bar li {
+    padding-left: 2.2rem;
+    font-size: 1rem;
+}
+.moving-bar li:first-child {
+    list-style: none;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-1440px);
+    }
+}
+
+.moving-bar__link {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 172.69%;
+    text-align: center;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.moving-bar__link:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 4rem 0 4rem 4rem;
+}
+
+.hero__inner {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 9.4rem;
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 7.2rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 1rem 0 0;
+}
+
+.hero__img img {
+    width: 100%;
+}
+
+.hero__info .text-bigger {
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+
+@media (max-width: 1200px) {
+    .moving-bar {
+        padding: 0.8rem 1.6rem;
+    }
+
+    .hero__inner {
+        gap: 0 2rem;
+    }
+
+    .hero__title {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero__title {
+        font-size: 5vw;
+    }
+
+    .hero__info .text-bigger {
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 2.4rem 0 2.5rem;
+    }
+
+    .hero__inner {
+        align-items: center;
+        grid-template-columns: 100%;
+        gap: 1.6rem 0;
+    }
+
+    .hero__img {
+        grid-row: 1 / 2;
+    }
+    .hero__title {
+        font-size: 4rem;
+        line-height: 4.9rem;
+        margin: 1.3rem 0 2rem;
+    }
+}
