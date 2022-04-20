@@ -73,3 +73,18 @@
     }
 
 }
+@media (max-width: 350px) {
+    .new_arrivals__info{
+        padding: 0 0.5rem;
+    }
+    .new_arrivals__inner {
+        grid-template-columns: 100%;
+        gap: 0.7rem 0;
+        padding: 0;
+    }
+    .carousel_1 {
+        grid-column: unset;
+        position: relative;
+    }
+
+}

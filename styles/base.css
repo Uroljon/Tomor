@@ -47,7 +47,7 @@ body {
 }
 
 .sm-visible {
-    display: none;
+    display: none !important;
 }
 
 button {
@@ -216,7 +216,7 @@ button {
     }
 
     .sm-visible {
-        display: initial;
+        display: initial !important;
     }
 
     .sm-hidden {

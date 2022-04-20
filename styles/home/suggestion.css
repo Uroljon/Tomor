@@ -31,17 +31,17 @@
     position: relative;
 }
 
-.suggestion__carousel button {
+.carousel--prev, .carousel--next  {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
 }
 
-.suggestion__carousel .carousel--prev {
+.carousel--prev {
     left: 0;
 }
 
-.suggestion__carousel .carousel--next {
+.carousel--next {
     right: 0;
 }
 
