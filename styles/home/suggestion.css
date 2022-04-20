@@ -37,11 +37,11 @@
     transform: translate(0, -50%);
 }
 
-.carousel_2--prev {
+.suggestion__carousel .carousel--prev {
     left: 0;
 }
 
-.carousel_2--next {
+.suggestion__carousel .carousel--next {
     right: 0;
 }
 
@@ -58,8 +58,7 @@
 /* ======================== */
 .suggestion--chanel .carousel_3 {
     position: relative;
-    border: 1px solid #000;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .carousel_3--next, .carousel_3--prev{
     position: absolute;
@@ -86,36 +85,24 @@
 .suggestion--chanel .slick-list {
     margin: 0 -0.8rem;
     max-height: 51.6rem;
-    /* margin: 0; */
-}
-
-.suggestion--chanel .slick-slide {
-    /* width: 25%; */
-}
-
-.suggestion--chanel .slick-slide[data-slick-index="0"] {
-    /* width: 75% !important; */
-}
-
-.suggestion--chanel .carousel__banner {
-    /* height: auto !important; */
-    /* width: 75% !important; */
 }
 
 .suggestion--chanel .carousel__banner img {
-    /* width: 301%; */
     width: 310%;
-    /* height: 100%; */
-    /* max-height: 51.6rem; */
-
-    /* object-fit: cover; */
     display: block;
 }
 
+/* ================= */
+.grid-reverse {
+    grid-template-columns: calc(61% - 80px) 38.9% ;
+}
 @media (max-width: 1200px) {
     .suggestion__grid {
         gap: 0 3rem;
         grid-template-columns: 1fr calc(60% - 30px);
+    }
+    .grid-reverse {
+        grid-template-columns: calc(60% - 30px) 1fr;
     }
 }
 
@@ -124,6 +111,9 @@
         gap: 0 2rem;
         grid-template-columns: 1fr calc(63.4% - 70px);
 
+    }
+    .grid-reverse {
+        grid-template-columns: calc(63.4% - 70px) 1fr;
     }
 
     .suggestion__carousel {
@@ -193,12 +183,7 @@
     .suggestion--chanel .slick-slide[data-slick-index="2"] {
         display: none;
     }
-    /* .suggestion--chanel .slick-slide[data-slick-index="9"] {
-        display: none;
-    }
-    .suggestion--chanel .slick-slide[data-slick-index="10"] {
-        display: none;
-    } */
+
     .suggestion--chanel .slick-list .product img{
         max-height: 28.6rem;
         object-fit: cover;

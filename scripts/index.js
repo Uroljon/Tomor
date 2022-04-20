@@ -109,3 +109,95 @@ $('.carousel_3__wrapper').slick({
         }
     ]
 });
+
+$('.carousel_4').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    slidesPerRow: 1,
+    rows: 2,
+    arrows: true,
+    dots: false,
+    nextArrow: ".carousel_4--next",
+    prevArrow: ".carousel_4--prev",
+    autoplay: true,
+    autoplaySpeed: carousel_speed,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
+                slidesPerRow: 1,
+                rows: 1,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesPerRow: 1,
+                rows: 1,
+            }
+        },
+        {
+            breakpoint: 300,
+            settings: {
+                rows: 1,
+                slidesToShow: 1,
+            }
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
+
+$('.carousel_5').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    nextArrow: ".carousel_5--next",
+    prevArrow: ".carousel_5--prev",
+    autoplay: false,
+    autoplaySpeed: carousel_speed,
+    mobileFirst: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: "unslick"
+            // slidesToShow: 4,
+            // slidesToScroll: 1,
+        },
+
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
+// $('.carousel_5').on('setPosition', function(event, s, direction){
+    // console.log(s, direction)
+    // s.slick({
+    //     infinite: true,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1,
+    //     arrows: true,
+    //     dots: false,
+    //     nextArrow: ".carousel_5--next",
+    //     prevArrow: ".carousel_5--prev",
+    //     autoplay: false,
+    //     autoplaySpeed: carousel_speed,
+    //     mobileFirst: true,
+    //     responsive: [
+    //         {
+    //             breakpoint: 768,
+    //             settings: "unslick"
+    //         },
+    
+    //         // You can unslick at a given breakpoint now by adding:
+    //         // settings: "unslick"
+    //         // instead of a settings object
+    //     ]
+    // });
+// });
