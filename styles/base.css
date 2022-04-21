@@ -87,12 +87,14 @@ button {
     text-align: center;
     position: relative;
 }
-.slick-arrow{
+
+.slick-arrow {
     cursor: pointer;
     z-index: 1;
     background-color: transparent;
     border: none;
 }
+
 .product .text {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -103,13 +105,35 @@ button {
     width: 100%;
 }
 
+.product__badge {
+    position: absolute;
+    top: 1.7rem;
+    left: 1.7rem;
+    z-index: 1;
+    font-weight: 500;
+    line-height: 159.5%;
+}
+.old_price{
+    text-decoration: line-through;
+    margin-left: 0.5rem;
+}
+.product__badge--sale {
+    color: red;
+}
+
 .product__like {
     position: absolute;
     top: 1.7rem;
     right: 1.7rem;
     z-index: 1;
 }
-
+.product__icons{
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+.product__icons img{
+    margin: 0 0.4rem;
+}
 .product__title {
     font-weight: 700;
     font-size: 14px;
@@ -228,5 +252,12 @@ button {
         line-height: 2rem;
     }
 
-
+    .product__badge {
+        top: 0.7rem;
+        left: 0.8rem;
+    }
+    .product__like{
+        top: 0.7rem;
+        right: 0.8rem;
+    }
 }
