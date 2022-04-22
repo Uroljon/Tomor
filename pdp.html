@@ -59,118 +59,181 @@
           <li><a class="nav__link" href="#!">Sale</a></li>
         </ul>
       </div>
-      <div class="container-fluid">
-        <div class="moving-bar__wrapper">
-          <ul class="moving-bar">
-            <li><a href="#!" class="moving-bar__link">New arrivals</a></li>
-            <li>
-              <a href="#!" class="moving-bar__link">Our spring/summer baG collection</a>
-            </li>
-            <li>
-              <a href="#!" class="moving-bar__link">Sustainable fashion</a>
-            </li>
-            <li>
-              <a href="#!" class="moving-bar__link">Best beauty products</a>
-            </li>
-            <li>
-              <a href="#!" class="moving-bar__link">Night time skin routine</a>
-            </li>
-            <li><a href="#!" class="moving-bar__link">comfort & style</a></li>
-            <li>
-              <a href="#!" class="moving-bar__link">Just in high heels</a>
-            </li>
-          </ul>
-          <ul class="moving-bar">
-            <li><a href="#!" class="moving-bar__link">New arrivals</a></li>
-            <li>
-              <a href="#!" class="moving-bar__link">Our spring/summer baG collection</a>
-            </li>
-            <li>
-              <a href="#!" class="moving-bar__link">Sustainable fashion</a>
-            </li>
-            <li>
-              <a href="#!" class="moving-bar__link">Best beauty products</a>
-            </li>
-            <li>
-              <a href="#!" class="moving-bar__link">Night time skin routine</a>
-            </li>
-            <li><a href="#!" class="moving-bar__link">comfort & style</a></li>
-            <li>
-              <a href="#!" class="moving-bar__link">Just in high heels</a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </nav>
-    <div class="hero">
-      <div class="container">
-        <div class="hero__inner">
-          <div class="hero__info">
-            <div class="subtitle">What’s New</div>
-            <h1 class="hero__title">Spring has sprung</h1>
-            <p class="text-bigger sm-hidden">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <a href="plp.html" class="btn">Shop The Story</a>
-          </div>
-          <div class="hero__img">
-            <img src="./assets/images/home/hero.jpg" alt="fashion" />
-          </div>
-        </div>
-      </div>
-    </div>
   </header>
-  <section class="new_arrivals">
+  <main class="Product">
     <div class="container">
-      <div class="new_arrivals__inner">
-        <div class="new_arrivals__info">
-          <div class="subtitle">YOU’VE ARRIVED</div>
-          <h2 class="title">New Arrivals</h2>
-          <p class="text-bigger">
-            New styles just in, shop our latest arrivals.
-          </p>
-          <a href="plp.html" class="btn">Shop Now</a>
-        </div>
-        <div class="carousel_1">
-          <button type="button" class="carousel_1--next">
-            <img src="./assets/images/icons/carousel_next.svg" alt="next" />
-          </button>
-          <div class="carousel_1__wrapper">
+      <div class="product__inner">
+        <div class="product__carousel">
+          <div class="dots"></div>
+          <div class="carousel__wrapper">
             <div class="product">
               <img class="product__img" src="./assets/images/products/product_1.png" alt="1" />
-              <a href="pdp.html" class="product__title">Gucci</a>
-              <p class="text">Zipper Mini Dress</p>
-              <p class="text">$879.00</p>
-              <img class="product__like" src="./assets/images/icons/heart_full.svg" alt="fav" />
             </div>
             <div class="product">
               <img class="product__img" src="./assets/images/products/product_2.png" alt="1" />
-              <a href="pdp.html" class="product__title">Alexander wang</a>
-              <p class="text">Mix Pattern Leather Jacket</p>
-              <p class="text">$879.00</p>
-              <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
             </div>
             <div class="product">
               <img class="product__img" src="./assets/images/products/product_3.png" alt="1" />
-              <a href="pdp.html" class="product__title">Gucci</a>
-              <p class="text">Zipper Mini Dress</p>
-              <p class="text">$879.00</p>
-              <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
             </div>
-            <div class="product">
-              <img class="product__img" src="./assets/images/products/product_1.png" alt="1" />
-              <a href="pdp.html" class="product__title">Gucci</a>
-              <p class="text">Zipper Mini Dress</p>
-              <p class="text">$879.00</p>
-              <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
+          </div>
+        </div>
+        <form class="product__form" action="/cart" method="post">
+          <h2 class="title--pdp">Alexander wang</h2>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="text-2">Zipper Mini Dress</p>
+            <img src="./assets/images/icons/heart.svg" alt="heart">
+          </div>
+          <p class="text-2 product__price">$879.00</p>
+          <p class="text">Pay as low as $49/mo <a href="#!"><strong>Learn More</strong></a></p>
+          <p class="text product__done"><img src="./assets/images/icons/done.svg" alt="done"> TW-29382-2</p>
+          <select name="size" class="text-2 product__size" title="size">
+            <option value="1">Select Size</option>
+            <option value="2">M</option>
+            <option value="3">L</option>
+            <option value="4">XX</option>
+            <option value="5">XXL</option>
+          </select>
+          <a class="product__size__guide" href="#!"><strong>Size Guide</strong></a>
+          <p class="text-2">Color : White</p>
+          <div class="product__color-input">
+            <img src="./assets/images/pdp/Group 7.png" alt="1">
+            <img src="./assets/images/pdp/Group 3.png" alt="1">
+            <img src="./assets/images/pdp/swatch 2.png" alt="1">
+          </div>
+          <button class="product__btn">Add to Bag</button>
+          <div class="product__information">
+            <ul class="information__nav">
+              <li data-target="nav_1" class="active">Description</li>
+              <li data-target="nav_2">Detail</li>
+              <li data-target="nav_3">Shipping & Return</li>
+              <li data-target="nav_4">The Brand</li>
+            </ul>
+            <div class="information__content">
+              <p class="nav_1 active"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+              <p class="nav_2"> Detail ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+              <p class="nav_3"> Shipping ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+              <p class="nav_4"> The Brand ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
             </div>
+            <div class="sustainability">
+              <h3 class="text-2 fw-500">Sustainability</h3>
+              <p>Made with 100% sustainable materials. Learn More</p>
+              <div class="information__images">
+                <div class="information__img">
+                  <img src="./assets/images/pdp/rabbit.png" alt="cruelty-free">
+                  <p>Cruelty-free</p>
+                </div>
+                <div class="information__img">
+                  <img src="./assets/images/pdp/recycle.png" alt="recycle">
+                  <p>Recycled</p>
+                </div>
+                <div class="information__img">
+                  <img src="./assets/images/pdp/leaf.png" alt="vegan">
+                  <p>Vegan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <section class="suggestion">
+    <div class="container">
+      <h2 class="suggestion__title">Pair It With</h2>
+
+      <div class="carousel_2">
+        <button class="carousel_2_next"><img src="./assets/images/icons/carousel_next.svg" alt="next"></button>
+        <div class="carousel_2_wrapper">
+          <div class="product">
+            <img class="product__img" src="./assets/images/products/product_1.png" alt="1" />
+            <a href="pdp.html" class="product__title">Brand Name</a>
+            <p class="text">Product Name</p>
+            <p class="text">$879.00</p>
+            <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
+          </div>
+          <div class="product">
+            <img class="product__img" src="./assets/images/products/product_2.png" alt="1" />
+            <a href="pdp.html" class="product__title">Brand Name</a>
+            <p class="text">Product Name</p>
+            <p class="text">$879.00</p>
+            <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
+          </div>
+          <div class="product">
+            <img class="product__img" src="./assets/images/products/product_3.png" alt="1" />
+            <a href="pdp.html" class="product__title">Brand Name</a>
+            <p class="text">Product Name</p>
+            <p class="text">$879.00</p>
+            <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
+          </div>
+          <div class="product">
+            <img class="product__img" src="./assets/images/products/Product image-1.png" alt="1" />
+            <a href="pdp.html" class="product__title">Brand Name</a>
+            <p class="text">Product Name</p>
+            <p class="text">$879.00</p>
+            <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
+          </div>
+          <div class="product">
+            <img class="product__img" src="./assets/images/products/Product image-2.png" alt="1" />
+            <a href="pdp.html" class="product__title">Brand Name</a>
+            <p class="text">Product Name</p>
+            <p class="text">$879.00</p>
+            <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
           </div>
         </div>
       </div>
     </div>
   </section>
-  
+  <section class="suggestion">
+    <div class="container">
+      <h2 class="suggestion__title">You May Also Like</h2>
+
+      <div class="carousel_3">
+        <button class="carousel_3_next"><img src="./assets/images/icons/carousel_next.svg" alt="next"></button>
+        <div class="carousel_3_wrapper">
+          <div class="product">
+            <img class="product__img" src="./assets/images/products/product_1.png" alt="1" />
+            <a href="pdp.html" class="product__title">Brand Name</a>
+            <p class="text">Product Name</p>
+            <p class="text">$879.00</p>
+            <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
+          </div>
+          <div class="product">
+            <img class="product__img" src="./assets/images/products/product_2.png" alt="1" />
+            <a href="pdp.html" class="product__title">Brand Name</a>
+            <p class="text">Product Name</p>
+            <p class="text">$879.00</p>
+            <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
+          </div>
+          <div class="product">
+            <img class="product__img" src="./assets/images/products/product_3.png" alt="1" />
+            <a href="pdp.html" class="product__title">Brand Name</a>
+            <p class="text">Product Name</p>
+            <p class="text">$879.00</p>
+            <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
+          </div>
+          <div class="product">
+            <img class="product__img" src="./assets/images/products/Product image-1.png" alt="1" />
+            <a href="pdp.html" class="product__title">Brand Name</a>
+            <p class="text">Product Name</p>
+            <p class="text">$879.00</p>
+            <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
+          </div>
+          <div class="product">
+            <img class="product__img" src="./assets/images/products/Product image-2.png" alt="1" />
+            <a href="pdp.html" class="product__title">Brand Name</a>
+            <p class="text">Product Name</p>
+            <p class="text">$879.00</p>
+            <img class="product__like" src="./assets/images/icons/heart.svg" alt="fav" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer>
     <div class="container">
       <div class="footer__inner">
@@ -214,7 +277,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./scripts/slick.js"></script>
   <!-- custom js -->
-  <script src="./scripts/index.js" type="module"></script>
+  <script src="./scripts/pdp.js" type="module"></script>
 </body>
 
 </html>
