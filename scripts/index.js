@@ -90,7 +90,7 @@ $('.carousel_3__wrapper').slick({
     variableWidth: false,
     responsive: [
         {
-            breakpoint: 768,
+            breakpoint: 768.1,
             settings: {
                 slidesToShow: 2,
                 adaptiveHeight: true,
