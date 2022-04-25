@@ -75,9 +75,6 @@ $('.carousel_2').slick({
                 slidesToShow: 1,
             }
         },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
 });
 $('.carousel_3__wrapper').slick({
@@ -145,10 +142,7 @@ $('.carousel_4').slick({
                 rows: 1,
                 slidesToShow: 1,
             }
-        },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
+        }
     ]
 });
 
@@ -166,7 +160,6 @@ $('.carousel_5__wrapper').slick({
         {
             breakpoint: 768,
             arrows: false,
-            // settings: "unslick"
             nextArrow: ".salom",
             prevArrow: ".hayr",
             settings: {
@@ -176,16 +169,11 @@ $('.carousel_5__wrapper').slick({
         },
         {
             breakpoint: 1200,
-            // arrows: false,
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
             }
             
-        },
-
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
+        }
     ]
 });

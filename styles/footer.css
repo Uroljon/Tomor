@@ -7,9 +7,7 @@ footer {
 
 .footer__inner {
     display: grid;
-    /* grid-template-columns: 26.75% 32.8rem 1fr; */
     grid-template-columns: 26.75% 26.75% 1fr;
-    /* gap: 1.6rem 13rem; */
     gap: 1.6rem 10.6%;
 }
 

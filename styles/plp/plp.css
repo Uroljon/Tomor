@@ -91,7 +91,6 @@
 
 .pl_grid {
     display: flex;
-    /* grid-template-columns: 25% 1fr 25%; */
     gap: 0 1.6rem;
 }
 .filter, .sort{

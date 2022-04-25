@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Spring has sprung" />
+  <meta name="author" content="Uroljon Khidirboev" />
+  <meta property="og:site_name" content="Tomor" />
+  <meta name="title" content="Tomor" />
+
+  <title>Tomor | Cart</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- custom styling -->
+  <link rel="stylesheet" href="./styles/cart/cart.css" />
+  <link rel="shortcut icon" href="./assets/images/icons/heart.svg" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__inner">
+          <div class="nav__burger sm-visible">
+            <img src="./assets/images/icons/burger.svg" alt="burger nav" />
+          </div>
+          <div class="nav__search sm-hidden">
+            <input type="text" placeholder="SEARCH" />
+            <button>
+              <img src="./assets/images/icons/search.svg" alt="search" />
+            </button>
+          </div>
+          <a href="index.html" class="nav__logo">
+            <img src="./assets/images/icons/logo.svg" alt="Tomor logo" />
+          </a>
+          <div class="nav__auth">
+            <a class="sm-hidden" href="#!"><img src="./assets/images/icons/account.svg" alt="login" /></a>
+            <a class="sm-hidden" href="#!"><img src="./assets/images/icons/heart.svg" alt="likee" /></a>
+            <a class="nav__cart" href="cart.html"><img src="./assets/images/icons/cart.svg" alt="cart" /></a>
+          </div>
+        </div>
+        <ul class="nav__links">
+          <li><a class="nav__link" href="#!">New</a></li>
+          <li><a class="nav__link" href="#!">Designers</a></li>
+          <li><a class="nav__link" href="#!">Clothes</a></li>
+          <li><a class="nav__link" href="#!">Shoes</a></li>
+          <li><a class="nav__link" href="#!">Accessories</a></li>
+          <li><a class="nav__link" href="#!">Bags</a></li>
+          <li><a class="nav__link" href="#!">Jewlery</a></li>
+          <li><a class="nav__link" href="#!">Beauty</a></li>
+          <li><a class="nav__link" href="#!">Editorial</a></li>
+          <li><a class="nav__link" href="#!">Sale</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="Cart">
+    <div class="container container--cart">
+      <h2 class="cart__title">Shopping Bag</h2>
+      <div class="cart__items">
+        <div class="cart__heading subtitle--small cart--grid">
+          <div class="l-img">Product</div>
+          <div class="l-price">Price</div>
+          <div class="l-qty">Quantity</div>
+          <div class="l-total">Total</div>
+        </div>
+        <div class="item cart--grid">
+          <img class="item__img l-img" src="./assets/images/products/product_1.png" alt="product" loading="lazy">
+          <div class="item__info l-info">
+            <h3 class="item__title">Gucci</h3>
+            <p class="item__name">Zipper Mini Dress</p>
+            <p class="item__color">White</p>
+            <p class="item__size">S</p>
+          </div>
+          <p class="item__price l-price"><strong>$879.00</strong></p>
+          <div class="item__qty l-qty">
+            <button class="item__qty__btn item__qty--minus">-</button>
+            <span>1</span>
+            <button class="item__qty__btn item__qty--plus">+</button>
+          </div>
+          <div class="item__total l-total">$28.00</div>
+          <div class="item__links">
+            <a href="#!"><strong>Move to wishlist</strong></a>
+            <a href="#!"><strong>Remove</strong></a>
+          </div>
+        </div>
+        <div class="item cart--grid">
+          <img class="item__img l-img" src="./assets/images/products/product_1.png" alt="product" loading="lazy">
+          <div class="item__info l-info">
+            <h3 class="item__title">Gucci</h3>
+            <p class="item__name">Zipper Mini Dress</p>
+            <p class="item__color">White</p>
+            <p class="item__size">S</p>
+          </div>
+          <p class="item__price l-price"><strong>$879.00</strong></p>
+          <div class="item__qty l-qty">
+            <button class="item__qty__btn item__qty--minus">-</button>
+            <span>1</span>
+            <button class="item__qty__btn item__qty--plus">+</button>
+          </div>
+          <div class="item__total l-total">$28.00</div>
+          <div class="item__links">
+            <a href="#!"><strong>Move to wishlist</strong></a>
+            <a href="#!"><strong>Remove</strong></a>
+          </div>
+        </div>
+
+      </div>
+      <form class="cart__buy" action="/checkout" method="post">
+      
+        <div class="subtotal">
+          <h3 class="subtotal__title">
+            <div>Subtotal</div>
+            <span>$1779.00</span>
+          </h3>
+          <p>Tax and shipping calculates at checkout.</p>
+          <div class="subtotal__row">
+            <p>Pay as low as $123/mo with</p>
+            <img src="./assets/images/cart/affirm.svg" alt="affirm">
+            <a class="learn_more" href="#!"><b>Learn More</b></a>
+          </div>
+          <button class="cart__btn" type="submit">Secure Checkout</button>
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <p class="subtitle footer__info">
+          Toward is more than a shopping destination. It’s a movement.
+        </p>
+        <form action="/subscribe" class="footer-form" method="post">
+          <h3 class="footer-form__title">Sign up for toward updates</h3>
+          <p class="text">
+            Receiving our newsletter with access to our latest collections,
+            events and news.
+          </p>
+          <div class="footer-form__input">
+            <input type="email" name="email" placeholder="Email Address" />
+            <img src="./assets/images/icons/arrow_right.svg" alt="right" />
+          </div>
+          <div class="footer-form__social">
+            <a href="#!"><img src="./assets/images/icons/instagram.svg" alt="in" /></a>
+            <a href="#!"><img src="./assets/images/icons/facebook.svg" alt="fb" /></a>
+          </div>
+        </form>
+        <div class="footer__links">
+          <ul>
+            <li class="footer__links__title">Customer Care</li>
+            <li><a class="footer__link" href="#!">FAQ</a></li>
+            <li><a class="footer__link" href="#!">Shipping & Returns</a></li>
+            <li><a class="footer__link" href="#!">Contact</a></li>
+          </ul>
+          <ul>
+            <li class="footer__links__title">Company</li>
+            <li><a class="footer__link" href="#!">About Us</a></li>
+            <li><a class="footer__link" href="#!">Journal</a></li>
+            <li><a class="footer__link" href="#!">Press</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2021 Toward Brand</p>
+    </div>
+  </footer>
+  <!-- custom js -->
+  <script src="./scripts/cart.js" type="module"></script>
+</body>
+
+</html>
